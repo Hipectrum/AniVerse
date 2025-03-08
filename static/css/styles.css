@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+button {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #00f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #f00;
+}
+
+.character-slider-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.character-card {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    transition: transform 0.5s ease;
+    border: 1px solid #333;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #222;
+}
+
+.character-card img {
+    width: 300px;
+    height: 400px;
+    object-fit: contain;
+    object-position: top left;
+    border-radius: 10px;
+}
+
+.character-info {
+    width: 40vw;
+    padding: 20px;
+    text-align: left;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.character-info h3,
+.character-info h4 {
+    margin: 10px 0;
+}
+
+.character-info p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: none;
+}
+
+.show-buttons .buttons {
+    display: flex;
+}
+
+#prev, #next {
+    background-color: #00f;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#prev:hover, #next:hover {
+    background-color: #f00;
+}
